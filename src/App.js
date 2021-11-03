@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "@mui/material";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           Learn React
         </a>
         <Button variant="contained"> Hello world!</Button>
+        <NavBar></NavBar>
       </header>
     </div>
   );
