@@ -1,7 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "@mui/material";
+import { Button, Link } from "@mui/material";
 import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+} from "react-router-dom";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
@@ -21,6 +29,19 @@ function App() {
         </a>
         <Button variant="contained"> Hello world!</Button>
         <NavBar></NavBar>
+        {/* <HomePage></HomePage> */}
+        {/* <BlogPage /> */}
+
+        <Router>
+          <div>
+            <Link to="/home">Homepage</Link>
+            <Routes>
+              <Route path="/home">
+                <HomePage />
+              </Route>
+            </Routes>
+          </div>
+        </Router>
       </header>
     </div>
   );
