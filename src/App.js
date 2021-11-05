@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "@mui/material";
 import NavBar from "./components/NavBar";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
         <Button variant="contained"> Hello world!</Button>
         <NavBar></NavBar>
+        <ContactPage></ContactPage>
       </header>
     </div>
   );

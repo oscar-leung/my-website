@@ -40,7 +40,7 @@ const ContactPage = () => {
             id="phone"
             value={phone}
             placeholder="(###)###-####"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setPhone(e.target.value)}
           ></input>
         </label>
         <label htmlFor="address">
