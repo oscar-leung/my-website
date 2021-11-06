@@ -14,7 +14,7 @@ export default function NavBar() {
     setAnchorEl(null);
   };
   return (
-    <div>
+    <React.Fragment>
       <Link>
         <Button variant="outlined">Home</Button>
         <Button variant="outlined">Portfolio</Button>
@@ -46,6 +46,6 @@ export default function NavBar() {
           Email Address: oscarleung1@gmail.com
         </MenuItem>
       </Menu>
-    </div>
+    </React.Fragment>
   );
 }
