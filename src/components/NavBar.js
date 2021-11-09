@@ -13,26 +13,29 @@ export default function NavBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
-    <React.Fragment>
-      <Link>
-        <Button variant="outlined">Home</Button>
+    <>
+      <nav>
+        <Link to="/portfolio">
+          <Button variant="outlined">Home</Button>
+        </Link>
         <Button variant="outlined">Portfolio</Button>
         <Button variant="outlined">Resume</Button>
         <a href="https://mui.com/getting-started/templates/blog/">
           <Button variant="outlined">Blog</Button>
         </a>
-      </Link>
-      <Button
-        id="contact-button"
-        aria-controls="contact-menu"
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        onClick={handleClick}
-        variant="outlined"
-      >
-        Contact
-      </Button>
+        <Button
+          id="contact-button"
+          aria-controls="contact-menu"
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+          onClick={handleClick}
+          variant="outlined"
+        >
+          Contact
+        </Button>
+      </nav>
 
       <Menu
         id="contact-menu"
@@ -46,6 +49,6 @@ export default function NavBar() {
           Email Address: oscarleung1@gmail.com
         </MenuItem>
       </Menu>
-    </React.Fragment>
+    </>
   );
 }

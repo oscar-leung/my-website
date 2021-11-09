@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export default function ResumePage() {
-  const content = <div>{`This is the resume page`}</div>;
+  const content = `This is the resume page`;
 
   return <h1>{content}</h1>;
 }
